@@ -79,7 +79,7 @@ const commands = [
             option.setName('emojis')
                 .setDescription('Custom emojis for options (comma-separated, e.g. 🔥,💯,⭐)')
                 .setRequired(false)
-                .setMaxLength(200))
+                .setMaxLength(1950))
         .toJSON(),
     
     new SlashCommandBuilder()
@@ -118,7 +118,7 @@ const commands = [
                     option.setName('emojis')
                         .setDescription('Comma-separated emojis (e.g. 🔥,💯,⭐,❤️)')
                         .setRequired(true)
-                        .setMaxLength(200)))
+                        .setMaxLength(1950)))
         .addSubcommand(subcommand =>
             subcommand
                 .setName('name')
