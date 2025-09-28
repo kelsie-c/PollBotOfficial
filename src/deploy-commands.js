@@ -64,6 +64,16 @@ const commands = [
                 .setRequired(false)
                 .setMaxLength(100))
         .addStringOption(option =>
+            option.setName('option11')
+                .setDescription('Eleventh poll option')
+                .setRequired(false)
+                .setMaxLength(100))
+        .addStringOption(option =>
+            option.setName('option12')
+                .setDescription('Twelfth poll option')
+                .setRequired(false)
+                .setMaxLength(100))
+        .addStringOption(option =>
             option.setName('emojis')
                 .setDescription('Custom emojis for options (comma-separated, e.g. 🔥,💯,⭐)')
                 .setRequired(false)

@@ -106,7 +106,7 @@ export async function getAllServerConfigs() {
 
 // Helper function to parse emojis
 export function parseEmojis(emojiString) {
-    if (!emojiString) return ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟'];
+    if (!emojiString) return ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟', '🅰️', '🅱️'];
     return emojiString.split(',').map(emoji => emoji.trim());
 }
 

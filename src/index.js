@@ -65,7 +65,7 @@ function createEditModal(pollData) {
     const optionsText = pollData.options.join('\n');
     const optionsInput = new TextInputBuilder()
         .setCustomId('options')
-        .setLabel('Poll Options (one per line, max 10)')
+        .setLabel('Poll Options (one per line, max 12)')
         .setStyle(TextInputStyle.Paragraph)
         .setValue(optionsText)
         .setMaxLength(1000)
@@ -310,9 +310,9 @@ client.on('interactionCreate', async (interaction) => {
                     });
                 }
                 
-                if (newOptions.length > 10) {
+                if (newOptions.length > 12) {
                     return await interaction.editReply({
-                        content: '❌ Maximum 10 options allowed!'
+                        content: '❌ Maximum 12 options allowed!'
                     });
                 }
                 
@@ -375,8 +375,8 @@ client.on('interactionCreate', async (interaction) => {
             const question = interaction.options.getString('question');
             const options = [];
             
-            // Collect all provided options (up to 10)
-            for (let i = 1; i <= 10; i++) {
+            // Collect all provided options (up to 12)
+            for (let i = 1; i <= 12; i++) {
                 const option = interaction.options.getString(`option${i}`);
                 if (option) {
                     options.push(option);

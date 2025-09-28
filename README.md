@@ -8,7 +8,7 @@ PollBot creates stunning embedded polls that make gathering opinions effortless.
 
 ### Key Features
 - **🎨 Beautiful Poll Embeds** - Clean, professional-looking polls with custom colors
-- **🎯 Up to 10 Options** - Handle simple yes/no questions or complex multi-choice decisions  
+- **🎯 Up to 12 Options** - Handle simple yes/no questions or complex multi-choice decisions  
 - **😊 Custom Emojis** - Use any emojis as voting buttons (with helpful picker shortcuts!)
 - **✏️ Edit Functionality** - Fix typos or update options within 15 minutes of posting
 - **🔧 Server Customization** - Each server gets its own settings and bot nickname
@@ -18,7 +18,7 @@ PollBot creates stunning embedded polls that make gathering opinions effortless.
 ## 🚀 Quick Start
 
 ### 1. Invite PollBot to Your Server
-[Add PollBot to Discord](https://discord.com/oauth2/authorize?client_id=1421549496558686393) with the required permissions.
+[Add PollBot to Discord](your-invite-link-here) with the required permissions.
 
 ### 2. Create Your First Poll
 ```
@@ -121,6 +121,6 @@ PollBot also supports the classic text command format:
 
 ## 🎉 Ready to Get Started?
 
-[**Add PollBot to Your Server**](https://discord.com/oauth2/authorize?client_id=1421549496558686393)
+[**Add PollBot to Your Server**](your-invite-link-here)
 
 Make every decision a community decision with PollBot!
