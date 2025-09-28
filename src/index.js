@@ -56,7 +56,7 @@ function createEditModal(pollData) {
         .setStyle(TextInputStyle.Paragraph)
         .setValue(emojisText)
         .setPlaceholder('🔥,💯,⭐,❤️,🎉,👍 (Win+. Mac:Cmd+Ctrl+Space)')
-        .setMaxLength(2000) // Increased from 300 to Discord's actual limit
+        .setMaxLength(4000) // Increased from 300 to Discord's actual limit
         .setRequired(false);
 
     // Channel input
