@@ -1,4 +1,4 @@
-# 📊 PollBotOfficial - Interactive Discord Polls Made Easy
+# 📊 PollBot - Interactive Discord Polls Made Easy
 
 Transform your Discord server discussions with beautiful, customizable polls that your community will love to vote on!
 
