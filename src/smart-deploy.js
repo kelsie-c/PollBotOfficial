@@ -6,7 +6,6 @@ import crypto from 'crypto';
 dotenv.config();
 
 // Define the poll slash command (same as deploy-commands.js)
-// const commands = [];
 const commands = [
     new SlashCommandBuilder()
         .setName('poll')
@@ -64,6 +63,16 @@ const commands = [
         .addStringOption(option =>
             option.setName('option10')
                 .setDescription('Tenth poll option')
+                .setRequired(false)
+                .setMaxLength(100))
+        .addStringOption(option =>
+            option.setName('option11')
+                .setDescription('Eleventh poll option')
+                .setRequired(false)
+                .setMaxLength(100))
+        .addStringOption(option =>
+            option.setName('option12')
+                .setDescription('Twelfth poll option')
                 .setRequired(false)
                 .setMaxLength(100))
         .addStringOption(option =>
@@ -134,11 +143,11 @@ function getCommandsHash() {
 // Check if commands have changed
 function commandsChanged() {
     const currentHash = getCommandsHash();
-    const hashFile = 'data/commands-hash.txt';
+    const hashFile = '/app/data/commands-hash.txt';
     
     // Create data directory if it doesn't exist
-    if (!fs.existsSync('data')) {
-        fs.mkdirSync('data', { recursive: true });
+    if (!fs.existsSync('/app/data')) {
+        fs.mkdirSync('/app/data', { recursive: true });
     }
     
     let previousHash = '';
@@ -176,7 +185,7 @@ async function smartDeploy() {
         console.log(`Started refreshing ${commands.length} application (/) commands.`);
 
         let deployRoute;
-        if (process.env.GUILD_ID && process.env.NODE_ENV === 'development') {
+        if (process.env.GUILD_ID && process.env.NODE_ENV !== 'production') {
             deployRoute = Routes.applicationGuildCommands(process.env.CLIENT_ID, process.env.GUILD_ID);
             console.log('Deploying to guild (development mode)');
         } else {
