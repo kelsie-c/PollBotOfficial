@@ -4,7 +4,7 @@ import { fileURLToPath } from 'url';
 import { promisify } from 'util';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const dbPath = path.join(__dirname, '..', 'data', 'poll-bot.db');
+const dbPath = '/app/data/poll-bot.db';
 
 // Create data directory if it doesn't exist
 import fs from 'fs';
